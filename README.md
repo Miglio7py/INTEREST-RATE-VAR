@@ -21,10 +21,16 @@ Successivamente alla stazionarietà si valuta l’autocorrelazione dei residui. 
 # Previsioni
 Una volta effettuati i vari test sul modello, si prevedono i 4 periodi successivi al dataframe train.
 Le previsioni sembrano seguire bene l’andamento  anche se non sono molto precise. Bisogna anche tenere in considerazione che una variazione dei tassi dell’1,25% in un trimestre è un dato abbastanza anomalo e per questo motivo il nostro modello potrebbe non stimarlo bene.
+
+![Grafico2](https://github.com/user-attachments/assets/4e6bbb2e-46b9-4131-abb3-989893ab26e4)
+
 # Valutazione Bontà delle Previsioni
 Come misura per valutare la bontà delle previsioni si utilizza il Mean Squared Error (MSE) e il Mean Absolute Percentage Error (MAPE). 
 # Modello Finale
 Dopo aver testato il modello train, si stima il modello finale considerando l’intero campione di osservazioni. Secondo il criterio di selezione AIC, anche in questo caso il modello ottimale è un VAR(2,0).
 Una volta stimato il modello si effettuano gli stessi test diagnostici che sono stati effettuati precedentemente sul modello train.
+
+![Grafico4](https://github.com/user-attachments/assets/7af5d57b-8e68-4378-9033-d141b60bfb44)
+
 # Conclusione
 Grazie a tale modello abbiamo ottenuto le previsioni della differenza prima dei tassi di interesse della FED. Le previsioni sono tutte vicine allo zero, il che è coerente con la fine del periodo hawkish della Federal Reserve. Infatti, togliendo la differenziazione, si è visto come i tassi attesi nei prossimi 4 trimestri passino dal 5,5% odierno fino al 5,56% del Q3-2024.
